@@ -71,7 +71,7 @@
 			<a-assets>
                 <a-asset-item
                     id="animated-asset-03"
-                    src="assets/building03/asset.glb"
+                    src="assets/PaintingWithSameMarkerAsB3/asset.png"
                 ></a-asset-item>
             </a-assets>
 
@@ -110,6 +110,8 @@
                     scale="0.00282885442445737 0.00282885442445737 0.00282885442445737"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset-02"
+		    animation="property: rotation; easing: linear; dur: 5000; to: 0 360 0; loop: true;"
+		    position="0 0 0"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
@@ -119,7 +121,7 @@
                 id="animated-marker-03"
                 type="pattern"
                 preset="custom"
-                url="assets/building03/marker.patt"
+                url="assets/PaintingWithSameMarkerAsB3/marker.patt"
                 raycaster="objects: .clickable"
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
@@ -128,10 +130,7 @@
                 <a-entity
                     id="bowser-model-03"
                     scale="0.02082885442445737 0.02082885442445737 0.02082885442445737"
-                    animation-mixer="loop: repeat"
                     gltf-model="#animated-asset-03"
-		    animation="property: rotation; easing: linear; dur: 5000; to: 0 360 0; loop: true;"
-		    position="0 0 0"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
@@ -140,9 +139,10 @@
             <a-entity camera></a-entity>
         </a-scene>
 	 
-	// <div class="buttons">
-	// <button class="say-hi-button">SEE THE INTERIOR</button>
-	// </div>
-	    
+	<!--
+	    <div class="buttons">
+	 <button class="say-hi-button">SEE THE INTERIOR</button>
+	</div> 
+	    --> 
     </body>
 </html>
